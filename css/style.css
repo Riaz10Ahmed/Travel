@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.custom_navbar {
+    padding: 30px 200px !important;
+}
+
+.custom_nav_style {
+    margin-left: auto;
+    margin-right: 20px !important;
+}
+
+.custom_nav_style li a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff !important;
+}
+
+.custom_nav_btn {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.custom_c_img {
+    height: 100vh;
+}
+
+.custom_c_indicators {
+    top: 150px !important;
+    left: 0px !important;
+    right: auto !important;
+    margin-left: 140px !important;
+    flex-direction: column !important;
+    justify-content: left !important;
+    align-items: center !important;
+}
+
+.custom_c_btn {
+    width: 3px !important;
+    height: 70px !important;
+    border: none !important;
+}
+
+.custom_c_number {
+    margin: 5px 0px;
+    color: #fff;
+}
+
+.custom_c_content {
+    top: 170px;
+    left: 220px;
+    text-align: left;
+}
+
+.custom_c_header {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.custom_c_title {
+    font-size: 1.25rem;
+}
+
+.fog{
+    position: absolute;
+    margin-top: -200px;
+    width: 100% !important;
+} 
+
+.explore_content{
+    margin-top:100px;
+}
