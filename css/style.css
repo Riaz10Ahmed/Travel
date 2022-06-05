@@ -20,6 +20,14 @@ body {
     padding-left: 0px !important;
 }
 
+.bg_darkblue{
+    background-color: #1b2339 !important;
+}
+
+.br_tl{
+    border-top-left-radius: 100px;
+}
+
 .custom_navbar {
     padding: 30px 200px !important;
 }
@@ -38,6 +46,16 @@ body {
 .custom_nav_btn {
     font-weight: 500;
     font-size: 14px;
+}
+
+.fixed-top.nav_bg_change{
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+
+.scrolled li a {
+    color: #000 !important;
+    transition: color 200ms linear;
 }
 
 .custom_c_img {
@@ -88,7 +106,7 @@ body {
 
 .explore_content{
     margin-top:200px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .explore_main{
@@ -97,8 +115,16 @@ body {
     margin-bottom: 2rem;
 }
 
-.explore_header{
-    font-size: 2rem;
+.explore_main h5{
+    font-size: 1rem;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.explore_main p{
+    margin: 0px;
+    font-size: 1.75rem;
+    font-weight: 600;
 }
 
 .explore_content .owl-theme .owl-nav{
@@ -114,15 +140,17 @@ body {
 .explore_content .owl-theme .owl-dots::before{
     content: '01';
     padding-right: 5px;
+    font-size: 0.8rem;
 }
 
 .explore_content .owl-theme .owl-dots::after{
     content: '06';
     padding-left: 5px;
+    font-size: 0.8rem;
 }
 
 .explore_content .owl-theme .owl-dots .owl-dot span{
-    width: 60px !important;
+    width: 40px !important;
     height: 3px !important;
     margin: 0px !important;
     border-radius: 0px !important;
@@ -191,3 +219,154 @@ body {
     letter-spacing: 10px;
     font-weight: 600;
 }
+
+.about_content{
+    margin-bottom: 150px;
+}
+
+.about_col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 100px;
+}
+
+.about_header{
+    border-left: 4px solid #fcbd34;
+    padding-left: 20px;
+    margin-bottom: 2rem;
+}
+
+.about_header h5{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+.about_header p{
+    color: #fff;
+    margin: 0px;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.about_title p{
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.about_title button{
+    background: #fcbd34;
+    border: none;
+    box-shadow: none;
+    padding: 10px 40px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.about_title button i{
+    font-size: 1.25rem;
+    margin-left: 10px;
+}
+
+.about_title button:hover{
+    margin-left: 30px;
+    transition: margin-left 250ms linear;
+}
+
+.about_image{
+    height: 400px;
+    background-color: #d7edff;
+}
+
+.social_icon_div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_icon_div i{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.itinerary_content{
+    margin-bottom: 150px;
+}
+
+.itinerary_header{
+    border-left: 4px solid #fcbd34;
+    padding-left: 20px;
+    margin-bottom: 2rem;
+}
+
+.itinerary_header h5{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+.itinerary_header p{
+    color: #000;
+    margin: 0px;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.filterItinerary {
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 20%;
+    text-align: center;
+    margin-right: 5px;
+    display: none;
+    height: 380px;
+  }
+
+  .showItinerary {
+    display: block;
+  }
+
+  .itinerary_div {
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .itn_btn {
+    border: 1px solid #000;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 15%;
+    border-radius: 5px;
+  }
+  
+  .itn_btn:hover {
+    background-color: #0ea0cf;
+    border: 1px solid #0ea0cf;
+    color: #fff;
+  }
+  
+  .itn_btn.itn_active {
+    background-color: #0ea0cf;
+    border: 1px solid #0ea0cf;
+    color: white;
+  }
+
+  #topItineraries{
+      display: flex;
+      justify-content: space-between;
+  }

@@ -91,7 +91,7 @@
         <img src="./img/fog.png" alt="fog" width="100%" height="350px" />
     </div>
 
-
+    <!-- Explore section -->
     <div class="explore_content">
         <div class="row mr_0">
             <div class="col-1 explore_col1">
@@ -102,48 +102,48 @@
             </div>
             <div class="col-6 pdr_0">
                 <div class="explore_main">
-                    <h5 class="explore_header">Destination</h5>
-                    <p>Book favourite places all over the world and start exploring</p>
+                    <h5>Destinations</h5>
+                    <p>Start exploring</p>
                 </div>
                 <div>
                     <div class="owl-carousel owl-theme">
                         <div class="item explore_slide_div">
-                            <img src="./img/exp_img1.jpg" alt="explore" class="explore_slide_img"/>
+                            <img src="./img/exp_img1.jpg" alt="explore" class="explore_slide_img" />
                             <div class="explore_text_div">
                                 <h5 class="explore_text_header">Europe</h5>
                                 <p class="explore_text_title">13N14D</p>
                             </div>
                         </div>
                         <div class="item explore_slide_div">
-                            <img src="./img/exp_img2.jpg" alt="explore" class="explore_slide_img"/>
+                            <img src="./img/exp_img2.jpg" alt="explore" class="explore_slide_img" />
                             <div class="explore_text_div">
                                 <h5 class="explore_text_header">Grand Swiss</h5>
                                 <p class="explore_text_title">8N9D</p>
                             </div>
                         </div>
                         <div class="item explore_slide_div">
-                            <img src="./img/exp_img3.jpg" alt="explore" class="explore_slide_img"/>
+                            <img src="./img/exp_img3.jpg" alt="explore" class="explore_slide_img" />
                             <div class="explore_text_div">
                                 <h5 class="explore_text_header">Switzerland</h5>
                                 <p class="explore_text_title">7N8D</p>
                             </div>
                         </div>
                         <div class="item explore_slide_div">
-                            <img src="./img/exp_img4.jpg" alt="explore" class="explore_slide_img"/>
+                            <img src="./img/exp_img4.jpg" alt="explore" class="explore_slide_img" />
                             <div class="explore_text_div">
                                 <h5 class="explore_text_header">Paris</h5>
                                 <p class="explore_text_title">8N9D</p>
                             </div>
                         </div>
                         <div class="item explore_slide_div">
-                            <img src="./img/exp_img1.jpg" alt="explore" class="explore_slide_img"/>
+                            <img src="./img/exp_img1.jpg" alt="explore" class="explore_slide_img" />
                             <div class="explore_text_div">
                                 <h5 class="explore_text_header">Europe</h5>
                                 <p class="explore_text_title">13N14D</p>
                             </div>
                         </div>
                         <div class="item explore_slide_div">
-                            <img src="./img/exp_img2.jpg" alt="explore" class="explore_slide_img"/>
+                            <img src="./img/exp_img2.jpg" alt="explore" class="explore_slide_img" />
                             <div class="explore_text_div">
                                 <h5 class="explore_text_header">Swiss Alps</h5>
                                 <p class="explore_text_title">7N8D</p>
@@ -154,35 +154,156 @@
             </div>
         </div>
     </div>
+
+    <!-- About section -->
+    <div class="container about_content">
+        <div class="row">
+            <div class="col-11 bg_darkblue br_tl">
+                <div class="row">
+                    <div class="col-6 about_col1">
+                        <div class="about_header">
+                            <h5>About us</h5>
+                            <p>Know about us</p>
+                        </div>
+                        <div class="about_title">
+                            <p>To move, to breathe, to fly, to float, to gain all while you give, to roam the roads of
+                                lands remote: To travel is to live.</p>
+                            <button>know more<i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-5 about_image"></div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="social_icon_div">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Itineraries -->
+    <div class="container itinerary_content">
+        <div class="itinerary_header">
+            <h5>Discover</h5>
+            <p>Top Itineraries</p>
+        </div>
+
+        <div>
+            <div id="topItineraries">
+                <button onclick="filterSelection('adventure')" class="itn_btn itn_active">Adventure</button>
+                <button onclick="filterSelection('family')" class="itn_btn">Family</button>
+                <button onclick="filterSelection('honeymoon')" class="itn_btn">Honeymoon</button>
+                <button onclick="filterSelection('roadtrip')" class="itn_btn">Roadtrip</button>
+                <button onclick="filterSelection('beaches')" class="itn_btn">Beaches</button>
+                <button onclick="filterSelection('history')" class="itn_btn">History</button>
+            </div>
+
+            <div class="itinerary_div">
+                <div class="filterItinerary adventure">
+                   Adventure1
+                </div>
+                <div class="filterItinerary adventure">Adventure2</div>
+                <div class="filterItinerary family">family1</div>
+                <div class="filterItinerary family beaches">family2 beaches1</div>
+                <div class="filterItinerary honeymoon">honeymoon1</div>
+                <div class="filterItinerary roadtrip">roadtrip1</div>
+                <div class="filterItinerary history">history1</div>
+                <div class="filterItinerary history">history2</div>
+                <div class="filterItinerary history">history3</div>
+                <div class="filterItinerary history honeymoon">history4 honeymoon2</div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./owlcarousel/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(function () {
-                $('.owl-carousel').owlCarousel({
-                    autoplay:true,
-                    autoplayTimeout:3000,
-                    autoplayHoverPause:false,
-                    loop: true,
-                    margin: 10,
-                    nav: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 2.5
-                        },
-                        1000: {
-                            items: 3.5
-                        }
-                    }
-                })
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".fixed-top");
+                $nav.toggleClass('nav_bg_change', $(this).scrollTop() > $nav.height());
             });
-        </script>
+            $(document).scroll(function () {
+                var $nav = $(".custom_nav_style");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: false,
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2.5
+                    },
+                    1000: {
+                        items: 3.5
+                    }
+                }
+            })
+        });
+        filterSelection("adventure")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterItinerary");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                iltRemoveClass(x[i], "showItinerary");
+                if (x[i].className.indexOf(c) > -1) iltAddClass(x[i], "showItinerary");
+            }
+        }
+
+        function iltAddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function iltRemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        var btnContainer = document.getElementById("topItineraries");
+        var btns = btnContainer.getElementsByClassName("itn_btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("itn_active");
+                current[0].className = current[0].className.replace(" itn_active", "");
+                this.className += " itn_active";
+            });
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/cbe91427b9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
