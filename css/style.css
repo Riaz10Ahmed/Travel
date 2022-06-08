@@ -50,6 +50,10 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 30px 200px !important;
 }
 
+.nav_box_shadow{
+    box-shadow: 2px 12px 12px 0 #f5f5f5;
+}
+
 .custom_nav_style {
     margin-left: auto;
     margin-right: 20px !important;
@@ -59,6 +63,17 @@ body::-webkit-scrollbar-thumb:hover {
     font-weight: 600;
     font-size: 14px;
     color: #fff !important;
+}
+
+.custom_nav_style2 {
+    margin-left: auto;
+    margin-right: 20px !important;
+}
+
+.custom_nav_style2 li a {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(0, 0, 0) !important;
 }
 
 .custom_nav_btn {
@@ -548,4 +563,116 @@ body::-webkit-scrollbar-thumb:hover {
 .ft_reg_section p {
     color: #fff;
     font-size: .75rem;
+}
+
+.dest_banner_container{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.dest_breadcrumb a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.dest_banner_content{
+    margin-top: 2rem;
+    margin-right: 2.5rem;
+}
+
+.dest_banner_content h1{
+    font-size: 2rem;
+}
+
+.dest_banner_content h5{
+    font-size: .9rem;
+}
+
+.dest_banner_content p{
+    font-size: 1rem;
+}
+
+.dest_banner_img{
+    width: 100%;
+}
+
+.dest_included_section{
+    background: #f7f7f7;
+    height: 250px;
+    padding-top: 50px;
+    border-top-left-radius: 100px;
+    margin-bottom: 350px;
+} 
+
+.dest_included_main {
+    border-left: 4px solid #fcbd34;
+    padding-left: 20px;
+    margin-bottom: 2rem;
+}
+
+.dest_included_main h5 {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.dest_included_main p {
+    margin: 0px;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.included_slide_div{
+    background-color: rgb(255, 255, 255);
+    height: 270px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.included_slide_div img{
+    padding-top: 1rem;
+    width: 70px !important;
+}
+
+.included_text_div{
+    padding: 1rem;
+}
+
+.dest_highlights_section{
+    background: #1b2339;
+    height: 250px;
+    padding-top: 50px;
+    border-top-right-radius: 100px;
+    margin-bottom: 550px;
+} 
+
+.dest_highlights_main {
+    border-left: 4px solid #fcbd34;
+    padding-left: 20px;
+    margin-bottom: 2rem;
+}
+
+.dest_highlights_main h5 {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.dest_highlights_main p {
+    margin: 0px;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.dest_highlights_section img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.mr_b_12{
+    margin-bottom: 12px;
 }
