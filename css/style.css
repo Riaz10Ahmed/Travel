@@ -158,13 +158,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 .explore_content .owl-theme .owl-dots::before {
     content: '01';
-    padding-right: 5px;
+    padding-left: 5px;
     font-size: 0.8rem;
 }
 
 .explore_content .owl-theme .owl-dots::after {
     content: '06';
-    padding-left: 5px;
+    padding-right: 5px;
     font-size: 0.8rem;
 }
 
@@ -356,6 +356,13 @@ body::-webkit-scrollbar-thumb:hover {
     position: relative;
 }
 
+.showItinerary .hide_onhover{
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    font-size: 1.25rem;
+}
+
 .itinerary_div {
     margin-top: 20px;
     overflow: hidden;
@@ -413,6 +420,11 @@ body::-webkit-scrollbar-thumb:hover {
 .showItinerary:hover .itn_overlay {
     width: 100%;
     text-align: left;
+    transition: 1s ease-in-out;
+}
+
+.showItinerary:hover  .hide_onhover{
+    display: none;
 }
 
 .itn_overlay h5 {
@@ -445,7 +457,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .showItinerary:hover {
     width: 25%;
-    transition: .5s;
+    transition: .5s ease-in-out;
 }
 
 .nl_header {
