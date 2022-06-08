@@ -598,12 +598,20 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .dest_included_section{
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 150px;
+} 
+
+.dest_included_bg{
+    position: absolute;
+    top: 0;
+    z-index: -1;
     background: #f7f7f7;
     height: 250px;
-    padding-top: 50px;
+    width: 100%;
     border-top-left-radius: 100px;
-    margin-bottom: 350px;
-} 
+}
 
 .dest_included_main {
     border-left: 4px solid #fcbd34;
@@ -640,12 +648,21 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .dest_highlights_section{
-    background: #1b2339;
-    height: 250px;
+    position: relative;
     padding-top: 50px;
     border-top-right-radius: 100px;
-    margin-bottom: 550px;
-} 
+    margin-bottom: 150px;
+}
+
+.dest_highlights_bg{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background: #1b2339;
+    width: 100%;
+    height: 250px;
+    border-top-right-radius: 100px;
+}
 
 .dest_highlights_main {
     border-left: 4px solid #fcbd34;
