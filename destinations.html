@@ -17,7 +17,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-scroll navbar-dark custom_navbar nav_box_shadow">
         <div class="container container-fluid">
-            <a class="navbar-brand" href="#" style="font-weight: 100 !important;color: #000">iLuvTravel</a>
+            <a class="navbar-brand ilt_logo" href="index.html">I <img src="./img/ilt_logo.png"/> Travel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -26,23 +26,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom_nav_style2">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="destinations.html">Destinations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Customized Tours</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destinations</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                 </ul>
-                <div>
+                <!-- <div>
                     <button class="btn btn-warning custom_nav_btn" type="submit" style="margin-right: 15px;">Talk to
                         Expert</button>
                     <button class="btn btn-warning custom_nav_btn" type="submit">Pay Now</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
@@ -90,14 +90,14 @@
             <div>
                 <div class="owl-carousel owl-theme">
                     <div class="item included_slide_div">
-                        <img src="./img/included1.svg" alt="explore"/>
+                        <img src="./img/included1.svg" alt="explore" />
                         <div class="included_text_div">
                             <h5>Visa Assistance</h5>
                             <p>description</p>
                         </div>
                     </div>
                     <div class="item included_slide_div">
-                        <img src="./img/included2.svg" alt="explore"/>
+                        <img src="./img/included2.svg" alt="explore" />
                         <div class="included_text_div">
                             <h5>On-Trip Assistance</h5>
                             <p>description</p>
@@ -117,28 +117,296 @@
                 <p>Bali with Nusa Penida Island</p>
             </div>
 
-            <div class="row mr_b_12"> 
-                <div class="col-4 pdr_0">
-                    <img src="./img/dest_high1.jpg" alt="highlights"/>
+            <div class="row mr_b_12">
+                <div class="col-4 pdr_0 flip_card">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <img src="./img/dest_high1.jpg" alt="highlights" />
+                        </div>
+                        <div class="flip_card_back">
+                            <h5>Title</h5>
+                            <p>description</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4 pdr_0">
-                    <img src="./img/itn3.jpg" alt="highlights"/>
+                <div class="col-4 pdr_0 flip_card">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <img src="./img/itn3.jpg" alt="highlights" />
+                        </div>
+                        <div class="flip_card_back">
+                            <h5>Title</h5>
+                            <p>description</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="./img/dest_high2.jpg" alt="highlights"/>
+                <div class="col-4 flip_card">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <img src="./img/dest_high2.jpg" alt="highlights" />
+                        </div>
+                        <div class="flip_card_back">
+                            <h5>Title</h5>
+                            <p>description</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-7 pdr_0">
-                    <img src="./img/dest_high3.jpg" alt="highlights"/>
+                <div class="col-7 pdr_0 flip_card">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <img src="./img/dest_high3.jpg" alt="highlights" />
+                        </div>
+                        <div class="flip_card_back">
+                            <h5>Title</h5>
+                            <p>description</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-5">
-                    <img src="./img/dest_high4.jpg" alt="highlights"/>
+                <div class="col-5 flip_card">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <img src="./img/dest_high4.jpg" alt="highlights" />
+                        </div>
+                        <div class="flip_card_back">
+                            <h5>Title</h5>
+                            <p>description</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Itinerary -->
+    <div class="dest_itinerary_main">
+        <div class="container itinerary_content pdtb_50">
+            <div class="itinerary_header">
+                <h5>plan</h5>
+                <p>Itinerary</p>
+            </div>
+
+            <div class="dest_itinerary">
+                <div id="dest_itinerary_day">
+                    <button onclick="filterSelection('day1')" class="itn_btn2 itn_active">Day 1</button>
+                    <button onclick="filterSelection('day2')" class="itn_btn2">Day 2</button>
+                    <button onclick="filterSelection('day3')" class="itn_btn2">Day 3</button>
+                    <button onclick="filterSelection('day4')" class="itn_btn2">Day 4</button>
+                    <button onclick="filterSelection('day5')" class="itn_btn2">Day 5</button>
+                </div>
+
+                <div class="dest_itinerary_content">
+                    <div class="filterItineraryDay day1">
+                        <h4>Arrive in Phoenix, visit sedona</h4>
+                        <h5>Places you'll visit</h5>
+                        <ul>
+                            <li>
+                                <p><span>Place 1: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 2: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 3: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 4: </span>Short description of the place</p>
+                            </li>
+                        </ul>
+                        <h5>Things to do</h5>
+                        <ul>
+                            <li>
+                                <p><span>Title: </span>Content description</p>
+                            </li>
+                            <li>
+                                <p><span>Title: </span>Content description</p>
+                            </li>
+                        </ul>
+                        <h3><span>Note: </span>Notes if any</h3>
+                    </div>
+                    <div class="filterItineraryDay day2">
+                        <h4>Grand Canyon</h4>
+                        <h5>Places you'll visit</h5>
+                        <ul>
+                            <li>
+                                <p><span>Place 1: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 2: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 3: </span>Short description of the place</p>
+                            </li>
+                        </ul>
+                        <h5>Things to do</h5>
+                        <ul>
+                            <li>
+                                <p><span>Title: </span>Content description</p>
+                            </li>
+                            <li>
+                                <p><span>Title: </span>Content description</p>
+                            </li>
+                        </ul>
+                        <h3><span>Note: </span>Notes if any</h3>
+                    </div>
+                    <div class="filterItineraryDay day3">
+                        <h4>Monument Valley</h4>
+                        <h5>Places you'll visit</h5>
+                        <ul>
+                            <li>
+                                <p><span>Place 1: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 2: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 3: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 4: </span>Short description of the place</p>
+                            </li>
+                        </ul>
+                        <h5>Things to do</h5>
+                        <ul>
+                            <li>
+                                <p><span>Title: </span>Content description</p>
+                            </li>
+                        </ul>
+                        <h3><span>Note: </span>Notes if any</h3>
+                    </div>
+                    <div class="filterItineraryDay day4">
+                        <h4>Monument Valley & Arizona</h4>
+                        <h5>Places you'll visit</h5>
+                        <ul>
+                            <li>
+                                <p><span>Place 1: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 2: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 3: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 4: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 5: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 6: </span>Short description of the place</p>
+                            </li>
+                        </ul>
+                        <h5>Things to do</h5>
+                        <ul>
+                            <li>
+                                <p><span>Title: </span>Content description</p>
+                            </li>
+                            <li>
+                                <p><span>Title: </span>Content description</p>
+                            </li>
+                        </ul>
+                        <h3><span>Note: </span>Notes if any</h3>
+                    </div>
+                    <div class="filterItineraryDay day5">
+                        <h4>Antelope Canyon</h4>
+                        <h5>Places you'll visit</h5>
+                        <ul>
+                            <li>
+                                <p><span>Place 1: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 2: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 3: </span>Short description of the place</p>
+                            </li>
+                            <li>
+                                <p><span>Place 4: </span>Short description of the place</p>
+                            </li>
+                        </ul>
+                        <h5>Things to do</h5>
+                        <ul>
+                            <li>
+                                <p><span>Title: </span>Content description</p>
+                            </li>
+                        </ul>
+                        <h3><span>Note: </span>Notes if any</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Itinerary bg -->
+        <div class="dest_itinerary_main_bg">
+            <img src="./img/travelbg.jpg" alt="travel" />
+        </div>
+
+        <!-- Itinerary logo -->
+        <img class="dest_itinerary_travel_logo" src="./img/travel_logo.png" alt="travel_logo"/>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg_darkblue">
+        <div class="container">
+            <div class="row pd_100_0">
+                <div class="col-5 pl_0">
+                    <div class="nl_header">
+                        <h5>Join our</h5>
+                        <p>Newsletter</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="company_section">
+                        <p>Company</p>
+                        <ul>
+                            <li>About us</li>
+                            <li>Customized tours</li>
+                            <li>Destinations</li>
+                            <li>Privacy policy</li>
+                            <li>Terms & conditions</li>
+                            <li>Cancellation policy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="region_section">
+                        <p>Region</p>
+                        <ul>
+                            <li>Asia</li>
+                            <li>Oceania</li>
+                            <li>Africa</li>
+                            <li>Europe</li>
+                            <li>North America</li>
+                            <li>South America</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3 pdr_0">
+                    <div class="queries_section">
+                        <p>Any Queries?</p>
+                        <ul>
+                            <li><i class="fa-solid fa-envelope"></i>info@iltravel.in</li>
+                            <li><i class="fa-brands fa-whatsapp"></i>+91 93846 77007</li>
+                            <li><i class="fa-solid fa-phone"></i>+91 93846 77007</li>
+                        </ul>
+                    </div>
+
+                    <div class="ft_reg_section">
+                        <div>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <p>2022 MobileCRM Technologies Limited.<br /> All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <!-- Scripts section -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -181,48 +449,48 @@
                 }
             })
         });
-        // filterSelection("adventure")
+        filterSelection("day1")
 
-        // function filterSelection(c) {
-        //     var x, i;
-        //     x = document.getElementsByClassName("filterItinerary");
-        //     if (c == "all") c = "";
-        //     for (i = 0; i < x.length; i++) {
-        //         iltRemoveClass(x[i], "showItinerary");
-        //         if (x[i].className.indexOf(c) > -1) iltAddClass(x[i], "showItinerary");
-        //     }
-        // }
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterItineraryDay");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                iltRemoveClass(x[i], "showItineraryDay");
+                if (x[i].className.indexOf(c) > -1) iltAddClass(x[i], "showItineraryDay");
+            }
+        }
 
-        // function iltAddClass(element, name) {
-        //     var i, arr1, arr2;
-        //     arr1 = element.className.split(" ");
-        //     arr2 = name.split(" ");
-        //     for (i = 0; i < arr2.length; i++) {
-        //         if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-        //     }
-        // }
+        function iltAddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
 
-        // function iltRemoveClass(element, name) {
-        //     var i, arr1, arr2;
-        //     arr1 = element.className.split(" ");
-        //     arr2 = name.split(" ");
-        //     for (i = 0; i < arr2.length; i++) {
-        //         while (arr1.indexOf(arr2[i]) > -1) {
-        //             arr1.splice(arr1.indexOf(arr2[i]), 1);
-        //         }
-        //     }
-        //     element.className = arr1.join(" ");
-        // }
+        function iltRemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
 
-        // var btnContainer = document.getElementById("topItineraries");
-        // var btns = btnContainer.getElementsByClassName("itn_btn");
-        // for (var i = 0; i < btns.length; i++) {
-        //     btns[i].addEventListener("click", function () {
-        //         var current = document.getElementsByClassName("itn_active");
-        //         current[0].className = current[0].className.replace(" itn_active", "");
-        //         this.className += " itn_active";
-        //     });
-        // }
+        var btnContainer = document.getElementById("dest_itinerary_day");
+        var btns = btnContainer.getElementsByClassName("itn_btn2");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("itn_active");
+                current[0].className = current[0].className.replace(" itn_active", "");
+                this.className += " itn_active";
+            });
+        }
     </script>
     <script src="https://kit.fontawesome.com/cbe91427b9.js" crossorigin="anonymous"></script>
 </body>
