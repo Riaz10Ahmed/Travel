@@ -202,7 +202,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .explore_content .owl-theme .owl-dots::after {
-    content: '06';
+    content: '05';
     padding-right: 5px;
     font-size: 0.8rem;
 }
