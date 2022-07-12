@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .custom_navbar {
-    padding: 30px 200px !important;
+    padding: 20px 200px !important;
 }
 
 /* .nav_box_shadow{
@@ -92,7 +92,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .ilt_logo img{
-    width: 50px;
+    width: 100px;
 }
 
 .fixed-top.nav_bg_change {
@@ -100,9 +100,9 @@ body::-webkit-scrollbar-thumb:hover {
     transition: background-color 200ms linear;
 }
 
-.nav_bg_change > .container-fluid > .ilt_logo {
-    color: #1A385A !important;
-}
+/* .nav_bg_change > .container-fluid > .ilt_logo > img {
+    width: 50px;
+} */
 
 .scrolled li a {
     color: #1A385A !important;
@@ -891,4 +891,125 @@ body::-webkit-scrollbar-thumb:hover {
     position: absolute;
     bottom: 0;
     right: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .custom_navbar {
+        padding: 10px !important;
+    }
+
+    .navbar-toggler{
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .carousel-indicators{
+        display: none;
+    }
+
+    .custom_c_img {
+        height: 50vh;
+    }
+
+    .explore_content {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .filterItinerary {
+        width: 33%;
+    }
+
+    .company_section{
+        margin-bottom: 2rem;
+    }
+
+    .region_section{
+        margin-bottom: 2rem;
+    }
+    
+    .ft_reg_section{
+        margin-top: 2rem;
+        text-align: left;
+    }
+
+    .ft_reg_section div i{
+        margin-left: 0px;
+        margin-right: 1rem;
+    }
+
+    .xs_col_w{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .custom_navbar {
+        padding: 10px !important;
+    }
+
+    .navbar-toggler{
+        border: none !important;
+        box-shadow: none !important;
+        background: #1A385A !important;
+    }
+
+    .carousel-indicators{
+        display: none;
+    }
+
+    .explore_col1{
+        display: none;
+    }
+
+    .social_icon_div {
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+    
+    .social_icon_div i {
+        margin-right: 1rem;
+    }
+
+    .about_header {
+        margin-top: 2rem;
+    }
+
+    .about_col1 {
+        margin-bottom: 3rem;
+    }
+
+    .about_image {
+        height: 250px;
+        background-color: #769abe;
+    }
+
+    .about_content {
+        margin-bottom: 100px;
+    }
+
+    #topItineraries{
+        flex-wrap: wrap;
+    }
+
+    #topItineraries .itn_btn{
+        width: 32%;
+        margin-bottom: 1rem;
+    }
+
+    .itinerary_div {
+        flex-wrap: wrap;
+    }
+
+    .filterItinerary {
+        width: 30%;
+    }
+
+    .showItinerary:hover{
+        width: 35%;
+    }
+
+    .itinerary_content {
+        margin-bottom: 100px;
+    }
 }
