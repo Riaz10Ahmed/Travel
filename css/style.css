@@ -451,7 +451,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .itn_image {
     width: 100%;
-    object-fit: none;
+    object-fit: cover;
     height: 100%;
     opacity: .4;
 }
