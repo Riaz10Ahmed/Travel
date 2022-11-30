@@ -18,7 +18,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-scroll navbar-light custom_navbar">
         <div class="container container-fluid">
-            <a class="navbar-brand ilt_logo" href="index.html"><img src="./img/logo_main.PNG"/></a>
+            <a class="navbar-brand ilt_logo" href="index.html"><img src="./img/logo.PNG"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -60,47 +60,6 @@
         </div>
         
         <div class="bestselling_main">
-            <div class="bestselling_card">
-                <div class="topsection">
-                    <div class="startingfrom">
-                        <h4><span>from</span> ₹ 8,000</h4>
-                    </div>
-                    <img src="./img/ooty-startexp.jpg"/>
-                    <div class="stayDays">
-                        <h4>1N/2D</h4>
-                    </div>
-                </div>
-                <h5>Ooty</h5>
-                <p>Experience the natural splendor of Tamil Nadu's green and hilly Nilgiris district</p>
-            </div>
-
-            <div class="bestselling_card">
-                <div class="topsection">
-                    <div class="startingfrom">
-                        <h4><span>from</span> ₹ 12,000</h4>
-                    </div>
-                    <img src="./img/munnar-startexp.jpg"/>
-                    <div class="stayDays">
-                        <h4>2N/3D</h4>
-                    </div>
-                </div>
-                <h5>Ooty & Masinagudi</h5>
-                <p>Experience the natural splendor of Tamil Nadu's green and hilly Nilgiris district</p>
-            </div>
-
-            <div class="bestselling_card">
-                <div class="topsection">
-                    <div class="startingfrom">
-                        <h4><span>from</span> ₹ 22,000</h4>
-                    </div>
-                    <img src="./img/ooty-startexp.jpg"/>
-                    <div class="stayDays">
-                        <h4>3N/4D</h4>
-                    </div>
-                </div>
-                <h5>Ooty, Masinagudi & Wayanad</h5>
-                <p>Experience the natural splendor of Tamil Nadu's green and hilly Nilgiris district</p>
-            </div>
         </div>
     </div>
 
@@ -111,48 +70,7 @@
             <p>Explore the Unexplored</p>
         </div>
         
-        <div class="bestselling_main">
-            <div class="bestselling_card">
-                <div class="topsection">
-                    <div class="startingfrom">
-                        <h4><span>from</span> ₹ 8,000</h4>
-                    </div>
-                    <img src="./img/ooty-startexp.jpg"/>
-                    <div class="stayDays">
-                        <h4>1N/2D</h4>
-                    </div>
-                </div>
-                <h5>Ooty</h5>
-                <p>Experience the natural splendor of Tamil Nadu's green and hilly Nilgiris district</p>
-            </div>
-
-            <div class="bestselling_card">
-                <div class="topsection">
-                    <div class="startingfrom">
-                        <h4><span>from</span> ₹ 12,000</h4>
-                    </div>
-                    <img src="./img/munnar-startexp.jpg"/>
-                    <div class="stayDays">
-                        <h4>2N/3D</h4>
-                    </div>
-                </div>
-                <h5>Ooty & Masinagudi</h5>
-                <p>Experience the natural splendor of Tamil Nadu's green and hilly Nilgiris district</p>
-            </div>
-
-            <div class="bestselling_card">
-                <div class="topsection">
-                    <div class="startingfrom">
-                        <h4><span>from</span> ₹ 22,000</h4>
-                    </div>
-                    <img src="./img/ooty-startexp.jpg"/>
-                    <div class="stayDays">
-                        <h4>3N/4D</h4>
-                    </div>
-                </div>
-                <h5>Ooty, Masinagudi & Wayanad</h5>
-                <p>Experience the natural splendor of Tamil Nadu's green and hilly Nilgiris district</p>
-            </div>
+        <div class="trending_main">
         </div>
     </div>
 
@@ -240,7 +158,54 @@
     <script>
 
         $(document).ready(function () {
-        
+            var url = document.location.href;
+            var param = url.split('?')[1].split('=')[1];
+            var mydata = JSON.parse(da);
+            var bestSelling = '';
+            var trending = '';
+            $.each(mydata, function(key, value) {
+                if(value.destName == param){
+                    console.log(value.packages);
+                    $.each(value.packages, function(key, package) {
+                        if($.inArray("bestselling", package.packageCategoryTag) !== -1){
+                            bestSelling += `<div class="bestselling_card">
+                                <a href="./place.html?destination=${value.destName}&&package=${package.packageName}" class="rm_a">
+                                <div class="topsection">
+                                    <div class="startingfrom">
+                                        <h4><span>from</span> ₹ ${package.packagePriceStartingFrom}</h4>
+                                    </div>
+                                    <img src="${package.packageImg}"/>
+                                    <div class="stayDays">
+                                        <h4>${package.packageSubTitle}</h4>
+                                    </div>
+                                </div>
+                                <h5>${package.packageName}</h5>
+                                <p>${package.packageTitle}</p>
+                            </a>
+                        </div>`
+                        }
+                        if($.inArray("trending", package.packageCategoryTag) !== -1){
+                            trending += `<div class="bestselling_card">
+                                <a href="./place.html?destination=${value.destName}&&package=${package.packageName}" class="rm_a">
+                                <div class="topsection">
+                                    <div class="startingfrom">
+                                        <h4><span>from</span> ₹ ${package.packagePriceStartingFrom}</h4>
+                                    </div>
+                                    <img src="${package.packageImg}"/>
+                                    <div class="stayDays">
+                                        <h4>${package.packageSubTitle}</h4>
+                                    </div>
+                                </div>
+                                <h5>${package.packageName}</h5>
+                                <p>${package.packageTitle}</p>
+                            </a>
+                        </div>`
+                        }
+                    });
+                }
+            });
+            $('.bestselling_main').append(bestSelling);
+            $('.trending_main').append(trending);
         });
         
     </script>

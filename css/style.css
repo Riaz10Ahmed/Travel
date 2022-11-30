@@ -119,7 +119,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .ilt_logo img{
-    width: 120px;
+    width: 75px;
 }
 
 .fixed-top.nav_bg_change {
@@ -777,6 +777,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .dest_banner_img {
     width: 100%;
+    height: 350px;
+    border-radius: 30px;
+    object-fit: cover;
 }
 
 .dest_included_section {
@@ -818,8 +821,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .included_slide_div {
     background-color: rgb(255, 255, 255);
-    height: 270px;
+    height: 200px;
     margin-bottom: 50px;
+    margin-right: 1rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
@@ -829,7 +833,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .included_text_div {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .included_text_div p{
@@ -848,7 +852,7 @@ body::-webkit-scrollbar-thumb:hover {
     position: absolute;
     top: 0;
     z-index: -1;
-    background: #1A385A;
+    background: #000;
     width: 100%;
     height: 250px;
     border-top-right-radius: 100px;
@@ -881,6 +885,39 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+.dest_highlights_card{
+    padding: 20px;
+    background: #1c1c1c;
+    margin-bottom: 2rem;
+}
+
+.dest_highlights_card h5{
+    color: #fff;
+    margin: 1rem 0rem .5rem 0rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dest_highlights_card h4{
+    color: #999;
+    margin: .5rem 0rem 1rem 0rem;
+    font-size: .8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dest_highlights_card h3{
+    color: #fff;
+    margin: .5rem 0rem;
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.dest_highlights_card p{
+    color: #fff;
+    margin: 1rem 0rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    height: 100px;
 }
 
 .mr_b_12 {
@@ -937,7 +974,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .dest_itinerary_main_bg img{
-    opacity: .1;
+    opacity: .07;
     width: 100%;
     height: 100%;
     border-top-left-radius: 100px;
@@ -1011,7 +1048,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .filterItineraryDay > ul > li > p{
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: .75rem;
 }
 
@@ -1045,6 +1082,16 @@ body::-webkit-scrollbar-thumb:hover {
 .bestselling_main{
     display: flex;
     flex-wrap: wrap;
+}
+
+.trending_main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rm_a{
+    color: #000 !important;
+    text-decoration: none !important;
 }
 
 .bestselling_card{
