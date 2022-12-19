@@ -96,7 +96,7 @@
 
     <!-- Highlights -->
     <div class="dest_highlights_section">
-        <div class="dest_highlights_bg"></div>
+        <!-- <div class="dest_highlights_bg"></div> -->
         <div class="container">
             <div class="dest_highlights_main"></div>
             <div class="row mr_b_12 dest_highlights_content"> </div>
@@ -211,7 +211,14 @@
                             banner += `<h1>${urlPackage}</h1>
                                     <h5>${package.packageSubTitle}</h5>
                                     <hr />
-                                    <p>${package.packageDesc}</p>`
+                                    <p>${package.packageDesc}</p>
+                                    <div class="place_price_section">
+                                        <div>
+                                            <h4>* ₹${package.packagePriceStartingFrom}</h4>
+                                            <p><span>*Prices may vary based on dates & availability<span></p>
+                                        </div>
+                                        <button class="btn">Book Now</button>
+                                    </div>`
                             bannerImg += `<img src="${package.packageImg}" alt="banner_pic" class="dest_banner_img" />`
                             highlightsHeader += `<h5>Highlights</h5>
                                     <p>${package.packageName}</p>`

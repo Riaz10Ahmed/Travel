@@ -537,7 +537,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 20%;
     text-align: center;
     display: none;
-    height: 420px;
+    height: 350px;
 }
 
 .showItinerary {
@@ -557,6 +557,13 @@ body::-webkit-scrollbar-thumb:hover {
     overflow: hidden;
     display: flex;
     /* flex-wrap: wrap; */
+}
+
+.itinerary_div h5{
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    padding: 2rem 1rem;
 }
 
 .itn_btn {
@@ -648,6 +655,7 @@ body::-webkit-scrollbar-thumb:hover {
 .showItinerary:hover {
     width: 25%;
     transition: .5s ease-in-out;
+    cursor: pointer;
 }
 
 .nl_header {
@@ -836,6 +844,10 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 1.5rem;
 }
 
+.included_text_div h5{
+    font-size: 1.2rem;
+}
+
 .included_text_div p{
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.1rem;
@@ -846,6 +858,8 @@ body::-webkit-scrollbar-thumb:hover {
     padding-top: 50px;
     border-top-right-radius: 100px;
     margin-bottom: 150px;
+    background: #000;
+    padding-bottom: 50px;
 }
 
 .dest_highlights_bg {
@@ -1158,6 +1172,32 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 1.2rem;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
+}
+
+.place_price_section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.place_price_section h4{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Barlow Condensed';
+    margin: 0px;
+}
+
+.place_price_section span{
+    font-size: 1rem;
+}
+
+.place_price_section button{
+    background: black;
+    height: 50px;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'Open Sans';
 }
 
 @media only screen and (max-width: 600px) {

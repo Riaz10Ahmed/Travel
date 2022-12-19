@@ -325,13 +325,10 @@
                         </a>
                         </div>`;             
                     category += `<div class="filterItinerary ${value.categoryTag}">
-                        <img src="${value.destImg}" alt="itinerary" class="itn_image" />
-                        <p class="hide_onhover">${value.destName}</p>
-                        <div class="itn_overlay">
-                            <h5>${value.destName}</h5>
-                            <p>2 Nights and 3 Days</p>
-                            <button>Talk to Expert<i class="fa-solid fa-arrow-right-long"></i></button>
-                        </div>
+                            <a href="./packages.html?destination=${value.destName}">
+                                <img src="${value.destImg}" alt="itinerary" class="itn_image" />
+                                <h5>${value.destName}</h5>
+                            </a>
                         </div>`;
             });
             $('.owl-carousel').append(dest);
